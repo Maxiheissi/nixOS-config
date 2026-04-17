@@ -14,8 +14,9 @@
   programs.bash.sessionVariables = {
   EDITOR = "hx";
   VISUAL = "hx";
-  
-};
+  };
+
+
 
   
   programs.git = {
@@ -23,6 +24,20 @@
   userName = "maxiheissi";
   userEmail = "mhe@aon.at";  
   };
+
+  programs.yazi = {
+    enable = true;
+    settings = {
+      opener = {
+        edit = [
+	  {run = "hx $@"; block = true; }
+        ];
+      };
+    };
+  };  
+
+
+
 
   
   wayland.windowManager.hyprland = {
