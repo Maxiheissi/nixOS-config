@@ -23,7 +23,7 @@
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
 
-          home-manager.users.maxiheissi = import ./home/host/laptop.nix;
+          home-manager.users.maxiheissi = import ./home/hosts/laptop.nix;
         }
       ];
     };
