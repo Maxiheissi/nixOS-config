@@ -6,59 +6,28 @@
 
   home.stateVersion = "23.11";
 
-
-
-
   home.sessionVariables = {
   EDITOR = "hx";
   VISUAL = "hx";
   };
 
-  systemd.user.sessionVariables = {
-  EDITOR = "hx";
-  VISUAL = "hx";
-  };
-
+  
   programs.git = {
   enable = true;
   userName = "maxiheissi";
   userEmail = "mhe@aon.at";  
   };
 
-
-
-
-  programs.yazi = {
+  
+  wayland.windowManager.hyprland = {
   enable = true;
 
-  settings = {
-    opener = {
-      edit = [
-        {
-          run = "hx \"$@\"";
-          block = true;
-        }
-      ];
-    };
-  };
-
-  keymap = {
-  
-  manager = {
-      e = "open --interactive edit";
-    };
-  };
-};
-
-  wayland.windowManager.hyprland = {
-    enable = true;
-
-    settings =
+   settings =
+   {
+    input =
     {
-      input =
-      {
-        kb_layout = "de";
-      };
+      kb_layout = "de";
+    };
 
     "$mod" = "SUPER";
     "$terminal" = "ghostty";
