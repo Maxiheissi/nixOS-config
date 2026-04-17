@@ -28,7 +28,7 @@
       "$mod, F, fullscreen"
       
       "$mod, E, exec, kitty -e yazi"
-       ]
+       ];
       
     };
   };
