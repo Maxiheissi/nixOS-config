@@ -11,6 +11,12 @@
   VISUAL = "hx";
   };
 
+  programs.bash.sessionVariables = {
+  EDITOR = "hx";
+  VISUAL = "hx";
+  
+};
+
   
   programs.git = {
   enable = true;
