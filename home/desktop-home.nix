@@ -6,7 +6,24 @@
 
   home.stateVersion = "23.11";
 
-  programs.git.enable = true;
+
+
+
+  home.sessionVariables = {
+  EDITOR = "hx";
+  VISUAL = "hx";
+  };
+
+  systemd.user.sessionVariables = {
+  EDITOR = "hx";
+  VISUAL = "hx";
+  };
+
+  programs.git = {
+  enable = true;
+  userName = "maxiheissi";
+  userEmail = "mhe@aon.at";  
+  };
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -19,7 +36,7 @@
       };
 
     "$mod" = "SUPER";
-    "$terminal" = "kitty";
+    "$terminal" = "ghostty";
     "$fileManager" = "yazi";
     "$menu" = "wofi --show drun";
 
@@ -29,9 +46,6 @@
       "$mod, RETURN, exec, $terminal"
       "$mod, E, exec, $terminal -e $fileManager"
       "$mod, R, exec, $menu"
-
-
-
 # Fenster
       "$mod, Q, killactive"
       "$mod, F, fullscreen"

@@ -56,8 +56,7 @@
     yazi
 
     # Terminal
-    foot
-    zellij
+    ghostty
     kitty
 
     # Browser
