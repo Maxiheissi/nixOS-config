@@ -25,6 +25,31 @@
   userEmail = "mhe@aon.at";  
   };
 
+
+
+
+  programs.yazi = {
+  enable = true;
+
+  settings = {
+    opener = {
+      edit = [
+        {
+          run = "hx \"$@\"";
+          block = true;
+        }
+      ];
+    };
+  };
+
+  keymap = {
+  
+  manager = {
+      e = "open --interactive edit";
+    };
+  };
+};
+
   wayland.windowManager.hyprland = {
     enable = true;
 
