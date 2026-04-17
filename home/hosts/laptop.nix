@@ -1,7 +1,7 @@
 { ... }:
 {
   imports = [
-    ../common-home.nix
+#    ../common-home.nix
     ../desktop-home.nix
     ../hyprland-home.nix
   ];
