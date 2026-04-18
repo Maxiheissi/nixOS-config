@@ -30,12 +30,12 @@
         
         "$mod, F, fullscreen"
         # Workspaces
-        "$mod SHIFT, 1, workspace, 1"
-        "$mod SHIFT, 2, workspace, 2"
-        "$mod SHIFT, 3, workspace, 3"
-        "$mod SHIFT, 4, workspace, 4"
-        "$mod SHIFT, 5, workspace, 5"
-        # Fenster verschieben
+        "$ALT, 1, workspace, 1"
+        "$ALT, 2, workspace, 2"
+        "$ALT, 3, workspace, 3"
+        "$ALT, 4, workspace, 4"
+        "$ALT, 5, workspace, 5"
+       # Fenster verschieben
         "$mod, 1, movetoworkspace, 1"
         "$mod, 2, movetoworkspace, 2"
         "$mod, 3, movetoworkspace, 3"
