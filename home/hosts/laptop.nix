@@ -1,7 +1,8 @@
 { inputs, ... }:
 {
   imports = [
-    inputs.nix-colors.homeManagerModules.default
+
+    "${inputs.nix-colors}/modules/home-manager.nix"
     ../common-home.nix
     ../desktop-home.nix
     ../hyprland-home.nix

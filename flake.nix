@@ -24,7 +24,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-
+          home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users.maxiheissi = import ./home/hosts/laptop.nix;
         }
       ];
