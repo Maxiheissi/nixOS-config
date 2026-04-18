@@ -39,7 +39,7 @@
         "$mod, 5, movetoworkspace, 5"
 
         
-        "ALT, Tab workspace, e+1"
+        "ALT Tab workspace, e+1"
         
 
 
