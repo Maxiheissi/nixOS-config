@@ -57,21 +57,9 @@
     # Dateimanager
     yazi
 
-    # Terminal
-    ghostty
-    kitty
-
-    # Browser
-    firefox
-
     # Netzwerk & Bluetooth (TUI)
     bluetui
     impala
-
-    # Hyprland Basics
-    waybar
-    wofi
-    hyprpaper
 
     # Flake-Werkzeuge
     git
@@ -82,7 +70,6 @@
     curl
     ripgrep
     fd
-    wl-clipboard
   ];
 
 #--------------------─ Flakes aktivieren ────────────────────────────────────────────────────

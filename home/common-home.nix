@@ -46,8 +46,5 @@
     settings = {
       theme = "darcula";  
     };
-  };
-
-
-  
+  };  
 }
