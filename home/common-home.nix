@@ -44,13 +44,15 @@
     theme = {
       flavor = {
         use = "nord";
-      };      manager = {
-        border_style = "plain";
+      };
+      manager = {
+        border_style = "solid";
       };
       
       indicator = {
-        padding = { open = " "; close = " "; };
-      };
+        padding = 
+          { open = " ▐"; close = "▌ "; };
+        };
             
     };
  };  
