@@ -33,15 +33,7 @@
   programs.yazi = {
     enable = true;
 
-    
-    flavors = {
-      kanagawa = pkgs.fetchFromGitHub {
-        owner = "dangooddd";
-        repo = "kanagawa.yazi";
-        rev = "main";
-        sha256 = "sha256-Yz0zRVzmgbrk0m7OkItxIK6W0WkPze/t09pWFgziNrw=";      };
-    };
-    settings = {
+        settings = {
      opener = {
         edit = [
 	        {run = "hx $@"; block = true; }
