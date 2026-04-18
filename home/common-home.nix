@@ -36,12 +36,12 @@
     
     flavors = {
       kanagawa = pkgs.fetchFromGitHub {
-      owner = "dangooddd";
-      repo = "kanagawa.yazi";
-      rev = "main";
-      sha256 = lib.fakeSha256;
+        owner = "dangooddd";
+        repo = "kanagawa.yazi";
+        rev = "main";
+        sha256 = lib.fakeSha256;
+      };
     };
-    
     settings = {
      opener = {
         edit = [
