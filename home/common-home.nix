@@ -40,6 +40,12 @@
       manager = {
         border_style = "plain";
       };
+
+
+      indicator = {
+        
+        padding = { open = "▐", close = "▌" }
+      };
       
       opener = {
         edit = [
