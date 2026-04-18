@@ -36,9 +36,14 @@
       theme = {
         flavor = "nord";
       };
+      
+      manager = {
+        border_style = "plain";
+      };
+      
       opener = {
         edit = [
-	  {run = "hx $@"; block = true; }
+	        {run = "hx $@"; block = true; }
         ];
       };
     };
