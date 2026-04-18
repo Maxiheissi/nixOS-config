@@ -1,4 +1,4 @@
-{pkgs, ... }:
+{ config, pkgs, ... }:
 {
   home.packages = with pkgs;[
 
@@ -20,6 +20,7 @@
     confirm-close-surface = false
     font-family = JetBrainsMono Nerd Font
     font-size = 13
+    background = ${config.colorScheme.palette.base00}
   '';
 
   programs.waybar = {
