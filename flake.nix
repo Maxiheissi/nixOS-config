@@ -7,14 +7,15 @@
     home-manager = {
   	  url = "github:nix-community/home-manager";
 	  inputs.nixpkgs.follows = "nixpkgs";
-	  nix-colors.url = "github:misterio77/nix-colors";
-    };    
+    };
+    nix-colors.url = "github:misterio77/nix-colors";
+       
   };
 
-  outputs = { nixpkgs, home-manager, nix-colors, ... }: {
+  outputs = { nixpkgs, home-manager, nix-colors, ... }@inputs: {
     nixosConfigurations.laptop= nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = {inherit inputs;};
+      specialArgs = { inherit inputs; };
       modules = [
         ./hosts/laptop/default.nix
         ./hosts/laptop/hardware.nix
