@@ -39,12 +39,11 @@
         ];
       };
     };
-
     
     theme = {
-      flavor = {
-        use = "kanagawa";
-      };
+      #flavor = {
+      #  use = "kanagawa";
+      #};
       manager = {
         border_style = "plain";
       };
