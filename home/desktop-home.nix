@@ -30,7 +30,7 @@
             position = "top";
             height = 30;
 
-            modules-left = ["hyplrland/workspaces"];
+            modules-left = ["hyprland/workspaces"];
             modules-right = ["battery" "clock"];
 
             "hyprland/workspaces" = {
