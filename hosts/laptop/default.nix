@@ -4,7 +4,7 @@
 {
   imports = [
     ./hardware.nix
-  ]
+  ];
 
 
   
@@ -28,10 +28,6 @@
   # ─── Hyprland ─────────────────────────────────────────────────────────────
   programs.hyprland.enable = true;
 
- # services.displayManager.sddm = {
-  #  enable = true;
-   # wayland.enable = true;
- # };
 
   # ─── Bluetooth ────────────────────────────────────────────────────────────
   hardware.bluetooth.enable = true;
