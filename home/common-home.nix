@@ -9,7 +9,7 @@
 
   programs.zsh = {
     enable = true;
-    enableAutosuggestion = true;
+    enableAutosuggestions = true;
     enableSyntaxHighlighting = true;
   };
 
