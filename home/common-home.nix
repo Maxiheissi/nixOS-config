@@ -42,11 +42,11 @@
       };
 
 
-      indicator = {
-        
-        padding = { open = "▐", close = "▌" }
-      };
       
+      indicator = {
+        padding = { open = " "; close = " "; };
+      };
+            
       opener = {
         edit = [
 	        {run = "hx $@"; block = true; }
