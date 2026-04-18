@@ -33,25 +33,24 @@
   programs.yazi = {
     enable = true;
     settings = {
-      theme = {
-        flavor = "nord";
-      
-        manager = {
-          border_style = "plain";
-        };
-      
-        indicator = {
-          padding = { open = " "; close = " "; };
-        };
-            
-      };
-      opener = {
+     opener = {
         edit = [
 	        {run = "hx $@"; block = true; }
         ];
       };
     };
-  };  
+    theme = {
+      flavor = "nord";
+      manager = {
+        border_style = "plain";
+      };
+      
+      indicator = {
+        padding = { open = " "; close = " "; };
+      };
+            
+    };
+ };  
 
   programs.helix = {
     enable = true;
