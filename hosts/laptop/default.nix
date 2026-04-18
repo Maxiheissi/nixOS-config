@@ -82,6 +82,7 @@
     curl
     ripgrep
     fd
+    wl-clipboard
   ];
 
 #--------------------─ Flakes aktivieren ────────────────────────────────────────────────────
