@@ -50,10 +50,11 @@
       };
       
       indicator = {
-        padding = 
-          { open = "▐"; close = "▌"; };
+        padding = { open = "▐"; close = "▌"; };
         };
-       
+      status = {
+        padding = { open = "▐"; close = "▌"; };
+      }; 
     };
  };  
 
