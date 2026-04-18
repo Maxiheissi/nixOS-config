@@ -51,7 +51,7 @@
       
       indicator = {
         padding = 
-          { open = " ▐"; close = "▌ "; };
+          { open = "▐"; close = "▌"; };
         };
             
     };
