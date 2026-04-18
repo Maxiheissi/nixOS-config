@@ -1,4 +1,4 @@
-{ ... }:
+{config, ... }:
 {
   wayland.windowManager.hyprland = {
     enable = true;
@@ -60,13 +60,16 @@
       ];
 
       decoration = {
-        rounding = 10;
-        blur.enabled = true;
+        rounding = 5;
+        blur.enabled = false;
       };
 
       animations.enabled = true;
 
-      general = {
+      general = { 
+       "col.active_border" = "rgb(${config.colorScheme.palette.base0D})";
+       "col.inactive_border" = "rgb(${config.colorScheme.palette.base01})";
+        
         gaps_in = 5;
         gaps_out = 10;
         border_size = 2;
