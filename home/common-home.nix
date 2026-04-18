@@ -39,9 +39,12 @@
         ];
       };
     };
+
+    
     theme = {
-      flavor = "nord";
-      manager = {
+      flavor = {
+        use = "nord";
+      };      manager = {
         border_style = "plain";
       };
       
