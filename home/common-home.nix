@@ -6,12 +6,17 @@
 
   home.stateVersion = "23.11";
 
-  home.sessionVariables = {
-  EDITOR = "hx";
-  VISUAL = "hx";
+
+  programs.zsh = {
+    enable = true;
+    enableAutosuggestion = true;
+    enableSyntaxHighlighting = true;
   };
 
-  programs.bash.sessionVariables = {
+
+
+
+  home.sessionVariables = {
   EDITOR = "hx";
   VISUAL = "hx";
   };

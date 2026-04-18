@@ -4,20 +4,18 @@
 {
   imports = [
     ./hardware.nix
-  ];
-
-
-
-
-
+  ]
 
 
   
-
   # ─── Bootloader ───────────────────────────────────────────────────────────
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  #-----zsh-------------------
+  programms.zsh.enable = true;
+
+  
   # ─── Netzwerk ─────────────────────────────────────────────────────────────
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
@@ -51,7 +49,7 @@
   users.users.maxiheissi = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "video" "audio" "bluetooth" ];
-    shell = pkgs.bash;
+    shell = pkgs.zsh;
   };
 
   # ─── Pakete ───────────────────────────────────────────────────────────────
