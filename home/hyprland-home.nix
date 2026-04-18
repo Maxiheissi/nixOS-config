@@ -53,6 +53,8 @@
         "$mod, up,    movefocus, u"
         "$mod, down,  movefocus, d"
 
+        "$mod SHIFT, R, exec, hyprctl reload"
+        "$mod SHIFT, E, exit,"
 
         
       ];
