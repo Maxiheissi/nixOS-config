@@ -35,18 +35,16 @@
     settings = {
       theme = {
         flavor = "nord";
-      };
       
-      manager = {
-        border_style = "plain";
-      };
-
-
+        manager = {
+          border_style = "plain";
+        };
       
-      indicator = {
-        padding = { open = " "; close = " "; };
-      };
+        indicator = {
+          padding = { open = " "; close = " "; };
+        };
             
+      };
       opener = {
         edit = [
 	        {run = "hx $@"; block = true; }
