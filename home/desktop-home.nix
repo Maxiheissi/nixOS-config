@@ -18,6 +18,7 @@
   #Ghostty
   xdg.configFile."ghostty/config".text=''
     resize-overlay = never
+    confirm-close-surface = false
     font-family = JetBrainsMono Nerd Font
     font-size = 13
   '';
