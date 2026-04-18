@@ -39,8 +39,7 @@
         owner = "dangooddd";
         repo = "kanagawa.yazi";
         rev = "main";
-        sha256 = lib.fakeSha256;
-      };
+        sha256 = "sha256-Yz0zRVzmgbrk0m7OkItxIK6W0WkPze/t09pWFgziNrw=";      };
     };
     settings = {
      opener = {
