@@ -33,6 +33,9 @@
   programs.yazi = {
     enable = true;
     settings = {
+      theme = {
+        flavor = "nord";
+      };
       opener = {
         edit = [
 	  {run = "hx $@"; block = true; }
