@@ -22,7 +22,32 @@
     font-size = 13
   '';
 
-  programs.waybar.enable = true;
+  programs.waybar = {
+        enable = true;
+        settings = {
+          mainBar = {
+            layer = "top";
+            position = "top";
+            height = 30;
 
+            modules-left = ["hyplrland/workspaces"];
+            modules-right = ["battery" "clock"];
+
+            "hyprland/workspaces" = {
+              active-only = false;
+              on-click = "activate";  
+            };
+
+            "clock" = {
+              format = "{:%H:%M}";
+            };
+
+            "battery" = {
+              format = "{capacity}% {icon}";
+              format-icons = [ "" "" "" "" "" ];
+            };
+          };        
+        };
+  };
 
 }
