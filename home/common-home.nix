@@ -43,7 +43,7 @@
     
     theme = {
       flavor = {
-        use = "nord";
+        use = "kanagawa";
       };
       manager = {
         border_style = "solid";
