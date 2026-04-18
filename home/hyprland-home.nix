@@ -10,6 +10,10 @@
         kb_layout = "de";
       };
 
+      exec-once = [
+        "waybar"
+      ];
+
       
       "$mod" = "SUPER";
       "$term" = "ghostty";

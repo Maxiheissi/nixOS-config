@@ -7,7 +7,6 @@
   
       firefox
     
-      waybar
       wofi
       hyprpaper
 
@@ -23,7 +22,7 @@
     font-size = 13
   '';
 
-
+  programs.waybar.enable = true;
 
 
 }
