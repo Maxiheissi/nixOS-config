@@ -20,7 +20,7 @@
     confirm-close-surface = false
     font-family = JetBrainsMono Nerd Font
     font-size = 13
-    background = ${config.colorScheme.palette.base00}
+    background = 2e3440
   '';
 
   programs.waybar = {
