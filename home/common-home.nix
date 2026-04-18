@@ -32,6 +32,16 @@
 
   programs.yazi = {
     enable = true;
+
+    
+    flavors = {
+      kanagawa = pkgs.fetchFromGitHub {
+      owner = "dangooddd";
+      repo = "kanagawa.yazi";
+      rev = "main";
+      sha256 = lib.fakeSha256;
+    };
+    
     settings = {
      opener = {
         edit = [
@@ -41,14 +51,10 @@
     };
     
     theme = {
-      flavors = {
-    kanagawa = pkgs.fetchFromGitHub {
-      owner = "dangooddd";
-      repo = "kanagawa.yazi";
-      rev = "main";
-      sha256 = lib.fakeSha256;
-    };
-  };      manager = {
+      flavor = {
+        use = "kanagawa";
+      };
+      manager = {
         border_style = "plain";
       };
       
