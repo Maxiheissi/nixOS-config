@@ -41,10 +41,14 @@
     };
     
     theme = {
-      #flavor = {
-      #  use = "kanagawa";
-      #};
-      manager = {
+      flavors = {
+    kanagawa = pkgs.fetchFromGitHub {
+      owner = "dangooddd";
+      repo = "kanagawa.yazi";
+      rev = "main";
+      sha256 = lib.fakeSha256;
+    };
+  };      manager = {
         border_style = "plain";
       };
       
