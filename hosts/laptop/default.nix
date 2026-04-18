@@ -13,7 +13,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   #-----zsh-------------------
-  programms.zsh.enable = true;
+  programs.zsh.enable = true;
 
   
   # ─── Netzwerk ─────────────────────────────────────────────────────────────
