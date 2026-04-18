@@ -3,6 +3,14 @@
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
+
+
+      input = {
+
+        kb_layout = "de";
+      };
+
+      
       "$mod" = "SUPER";
       "$term" = "ghostty";
       "$filemanager" = "yazi";
