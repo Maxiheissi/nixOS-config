@@ -17,12 +17,11 @@
   ];
 
   #Ghostty
- # xdg.configFile."ghostty/config".text=''
-  #  resize-overlay = never
-   # confirm-close-surface = false
-   # font-family = JetBrainsMono Nerd Font
-   #font-size = 13
-    #background = ${config.colorScheme.palette.base00}
+  xdg.configFile."ghostty/config".text=''
+    resize-overlay = never
+    confirm-close-surface = false
+    font-family = Iosevka Nerd Font
+    font-size = 13
   #'';
 
 
@@ -30,7 +29,10 @@
   xdg.configFile."foot/foot.ini".text = ''
     [main]
       font=Iosevka Nerd Font:size=12
-   # font-bold=JetBrains Mono:size=13:weight=bold
+
+    [tweak]
+      pad=8x6
+     # font-bold=JetBrains Mono:size=13:weight=bold
    # font-italic=JetBrains Mono:size=13:slant=italic
    # font-bold-italic=JetBrains Mono:size=13:weight=bold:slant=italic
   '';  

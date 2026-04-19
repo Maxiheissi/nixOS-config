@@ -70,7 +70,7 @@
        "col.active_border" = "rgb(${config.colorScheme.palette.base0D})";
        "col.inactive_border" = "rgb(${config.colorScheme.palette.base01})";
         
-        gaps_in = 10;
+        gaps_in = 2;
         gaps_out = 4;
         border_size = 1;
       };
