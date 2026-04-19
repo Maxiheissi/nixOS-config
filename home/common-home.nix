@@ -47,6 +47,7 @@
       };
       manager = {
         border_style = "plain";
+        border_symbol = "|";
       };
       
       indicator = {
