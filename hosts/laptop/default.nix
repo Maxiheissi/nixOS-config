@@ -15,7 +15,17 @@
   #-----zsh-------------------
   programs.zsh.enable = true;
 
-  
+ # ─── Fonts ────────────────────────────────────────────────────────────────
+  fonts = {
+    enableDefaultPackages = true;
+    packages = with pkgs; [
+      jetbrains-mono
+      iosevka
+    ];
+    fontconfig.defaultFonts = {
+      monospace = [ "Iosevka" ];
+    };
+  }; 
   # ─── Netzwerk ─────────────────────────────────────────────────────────────
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
