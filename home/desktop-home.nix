@@ -4,6 +4,7 @@
 
       ghostty
       kitty
+      foot
   
       firefox
     

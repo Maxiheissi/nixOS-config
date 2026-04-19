@@ -60,7 +60,7 @@
       ];
 
       decoration = {
-        rounding = 2;
+        rounding = 1;
         blur.enabled = false;
       };
 
@@ -72,7 +72,7 @@
         
         gaps_in = 5;
         gaps_out = 10;
-        border_size = 2;
+        border_size = 1;
       };
     };
   };
