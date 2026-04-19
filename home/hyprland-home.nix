@@ -16,7 +16,7 @@
 
       
       "$mod" = "SUPER";
-      "$term" = "ghostty";
+      "$term" = "foot";
       "$filemanager" = "yazi";
       "$launcher" = "wofi --show drun";
 
