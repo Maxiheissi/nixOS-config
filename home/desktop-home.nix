@@ -9,6 +9,7 @@
       firefox
     
       wofi
+      fuzzel
       hyprpaper
 
       thunderbird

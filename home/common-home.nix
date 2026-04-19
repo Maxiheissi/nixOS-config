@@ -53,9 +53,7 @@
       indicator = {
         padding = { open = "▐"; close = "▌"; };
         };
-      status = {
-        #padding = { open = "▐"; close = "▌"; };
-        
+      status = {       
         sep_left = { open = ""; close = ""; };
         sep_right = { open = ""; close = ""; };
       }; 
