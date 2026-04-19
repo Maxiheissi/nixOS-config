@@ -30,7 +30,7 @@
     [main]
       font=Iosevka Nerd Font:size=12
 
-    [tweak]
+   # [tweak]
       pad=8x6
      # font-bold=JetBrains Mono:size=13:weight=bold
    # font-italic=JetBrains Mono:size=13:slant=italic
