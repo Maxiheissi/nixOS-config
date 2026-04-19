@@ -27,11 +27,11 @@
 
   
   xdg.configFile."foot/foot.ini".text = ''
-    [main]
-    font=JetBrains Mono:size=13
-    font-bold=JetBrains Mono:size=13:weight=bold
-    font-italic=JetBrains Mono:size=13:slant=italic
-    font-bold-italic=JetBrains Mono:size=13:weight=bold:slant=italic
+   # [main]
+   # font=JetBrains Mono:size=13
+   # font-bold=JetBrains Mono:size=13:weight=bold
+   # font-italic=JetBrains Mono:size=13:slant=italic
+   # font-bold-italic=JetBrains Mono:size=13:weight=bold:slant=italic
   '';  
 
   programs.waybar = {
