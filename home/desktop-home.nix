@@ -34,35 +34,94 @@
      # font-italic=JetBrains Mono:size=13:slant=italic
      # font-bold-italic=JetBrains Mono:size=13:weight=bold:slant=italic
   '';  
+programs.waybar = {
+  enable = true;
 
-  programs.waybar = {
-        enable = true;
-        settings = {
-          mainBar = {
-            layer = "top";
-            position = "top";
-            height = 30;
+  settings = [{
+    layer    = "top";
+    position = "top";
+    height   = 24;
+    spacing  = 0;
 
-            modules-left = ["hyprland/workspaces"];
-            modules-right = ["battery" "clock"];
+    modules-left   = [ "hyprland/workspaces" ];
+    modules-center = [ "clock" ];
+    modules-right  = [ "bluetooth" "network" "tray" ];
 
-            "hyprland/workspaces" ={
-              
-               format   = "[{id}]";
-               active-only = false;
-               on-click = "activate";  
-            };
+    "hyprland/workspaces" = {
+      format   = "[{id}]";
+      on-click = "activate";
+    };
 
-            "clock" = {
-              format = "{:%H:%M}";
-            };
+    clock = {
+      format = "{:%H:%M  %d.%m.%Y}";
+    };
 
-            "battery" = {
-              format = "{capacity}% {icon}";
-              format-icons = [ "" "" "" "" "" ];
-            };
-          };        
-        };
-  };
+    bluetooth = {
+      format           = "BT:{status}";
+      format-connected = "BT:{device_alias}";
+      on-click         = "ghostty -e bluetui";
+    };
 
-}
+    network = {
+      format-wifi       = "WLAN:{essid}";
+      format-ethernet   = "ETH:connected";
+      format-disconnected = "NET:off";
+      on-click          = "ghostty -e impala";
+    };
+  }];
+
+  style = ''
+    * {
+      font-family: "JetBrainsMono Nerd Font";
+      font-size: 12px;
+      border: none;
+      border-radius: 0;
+      min-height: 0;
+    }
+
+    window#waybar {
+      background: #0d0d0d;
+      color: #ebdbb2;
+      border-bottom: 1px solid #3c3836;
+    }
+
+    #workspaces button {
+      padding: 0 8px;
+      color: #504945;
+      background: transparent;
+      border-radius: 0;
+    }
+
+    #workspaces button.active {
+      color: #fe8019;
+      background: #1d2021;
+    }
+
+    #workspaces button:hover {
+      background: #1d2021;
+      color: #ebdbb2;
+    }
+
+    #clock {
+      color: #e5c07b;
+      padding: 0 12px;
+    }
+
+    #bluetooth {
+      color: #8ec07c;
+      padding: 0 10px;
+      border-left: 1px solid #3c3836;
+    }
+
+    #network {
+      color: #8ec07c;
+      padding: 0 10px;
+      border-left: 1px solid #3c3836;
+    }
+
+    #tray {
+      padding: 0 8px;
+      border-left: 1px solid #3c3836;
+    }
+  '';
+};}
