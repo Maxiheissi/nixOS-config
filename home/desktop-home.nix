@@ -1,4 +1,8 @@
 { config, pkgs, ... }:
+
+let
+  c = import ./colors.nix;
+in
 {
   home.packages = with pkgs;[
 
@@ -33,7 +37,10 @@
      # font-bold=JetBrains Mono:size=13:weight=bold
      # font-italic=JetBrains Mono:size=13:slant=italic
      # font-bold-italic=JetBrains Mono:size=13:weight=bold:slant=italic
-  '';  
+  '';
+
+
+  
 programs.waybar = {
   enable = true;
 
@@ -57,22 +64,22 @@ programs.waybar = {
     };
 
     bluetooth = {
-      format           = "BT:{status}";
-      format-connected = "BT:{device_alias}";
-      on-click         = "ghostty -e bluetui";
+      format           = "BT: {status}";
+      format-connected = "BT: {device_alias}";
+      on-click         = "foot -e bluetui";
     };
 
     network = {
-      format-wifi       = "WLAN:{essid}";
-      format-ethernet   = "ETH:connected";
-      format-disconnected = "NET:off";
-      on-click          = "ghostty -e impala";
+      format-wifi       = "WLAN: {essid}";
+      format-ethernet   = "ETH: connected";
+      format-disconnected = "NET: off";
+      on-click          = "foot -e impala";
     };
   }];
 
   style = ''
     * {
-      font-family: "JetBrainsMono Nerd Font";
+      font-family: "Iosevka Nerd Font";
       font-size: 12px;
       border: none;
       border-radius: 0;
@@ -80,7 +87,7 @@ programs.waybar = {
     }
 
     window#waybar {
-      background: #0d0d0d;
+      background: ${c.bg};
       color: #ebdbb2;
       border-bottom: 1px solid #3c3836;
     }
