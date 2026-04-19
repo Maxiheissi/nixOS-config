@@ -18,7 +18,7 @@
       "$mod" = "SUPER";
       "$term" = "foot";
       "$filemanager" = "yazi";
-      "$launcher" = "wofi --show drun";
+      "$launcher" = "fuzzel";
 
     
 
@@ -60,7 +60,7 @@
       ];
 
       decoration = {
-        rounding = 1;
+        rounding = 0;
         blur.enabled = false;
       };
 
@@ -70,8 +70,8 @@
        "col.active_border" = "rgb(${config.colorScheme.palette.base0D})";
        "col.inactive_border" = "rgb(${config.colorScheme.palette.base01})";
         
-        gaps_in = 5;
-        gaps_out = 10;
+        gaps_in = 2;
+        gaps_out = 4;
         border_size = 1;
       };
     };
