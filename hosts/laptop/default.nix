@@ -21,9 +21,10 @@
     packages = with pkgs; [
       jetbrains-mono
       iosevka
+       nerd-fonts.iosevka
     ];
     fontconfig.defaultFonts = {
-      monospace = [ "Iosevka" ];
+      monospace = [ "Iosevka Nerd Font" ];
     };
   }; 
   # ─── Netzwerk ─────────────────────────────────────────────────────────────
