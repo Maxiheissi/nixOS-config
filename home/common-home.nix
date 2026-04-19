@@ -54,7 +54,10 @@
         padding = { open = "▐"; close = "▌"; };
         };
       status = {
-        padding = { open = "▐"; close = "▌"; };
+        #padding = { open = "▐"; close = "▌"; };
+        
+        sep_left = { open = "", close = "]" };
+        sep_right = { open = "[", close = "" };
       }; 
     };
  };  
