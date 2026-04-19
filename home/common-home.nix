@@ -56,8 +56,8 @@
       status = {
         #padding = { open = "▐"; close = "▌"; };
         
-        sep_left = { open = ""; close = "]"; };
-        sep_right = { open = "["; close = ""; };
+        sep_left = { open = ""; close = ""; };
+        sep_right = { open = ""; close = ""; };
       }; 
     };
  };  
