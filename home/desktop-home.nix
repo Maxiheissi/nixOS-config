@@ -17,9 +17,13 @@ in
       fuzzel
       hyprpaper
       sublime4
+      jetbrains.idea
+      vscode
 
       thunderbird
-      wl-clipboard  
+      wl-clipboard
+      wiremix
+      python3  
   ];
 
 
