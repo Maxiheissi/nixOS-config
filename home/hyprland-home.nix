@@ -1,10 +1,37 @@
 {config, ... }:
+
+
+
+let
+  c = import ./colors.nix;
+  rgba = color: "rgba(" + (builtins.substring 1 6 color) + "ff)";
+in
 {
+  services.hyprpaper = {
+    enable = true;
+    settings = {
+      ipc = "off";
+      splash = false;
+    wallpaper = [
+      {
+        monitor = "";
+        path = "/home/maxiheissi/nixos-config/home/wallpaper.png";}
+    ];
+
+    };
+  };
+
+  
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
-
-
+      
+      env = [
+        "XCURSOR_THEME,Adwaita"
+        "XCURSOR_SIZE,24"
+        "HYPRCURSOR_THEME,Adwaita"
+        "HYPRCURSOR_SIZE,24"
+      ];
       input = {
 
         kb_layout = "de";
@@ -12,6 +39,7 @@
 
       exec-once = [
         "waybar"
+        "hyprpaper"
       ];
 
       
@@ -67,9 +95,9 @@
       animations.enabled = true;
 
       general = { 
-       "col.active_border" = "rgb(${config.colorScheme.palette.base0D})";
-       "col.inactive_border" = "rgb(${config.colorScheme.palette.base01})";
-        
+       "col.active_border"   = rgba c.orange;
+        "col.inactive_border" = rgba c.border;
+       
         gaps_in = 2;
         gaps_out = 4;
         border_size = 1;

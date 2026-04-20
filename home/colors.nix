@@ -1,10 +1,10 @@
 # colors.nix
 {
-  bg     = "#0d0d0d";
+  bg     = "#222222";
   bg1    = "#1d2021";
   bg2    = "#282828";
   border = "#3c3836";
-  fg     = "#ebdbb2";
+  fg     = "#d4d4d4";
   fgdim  = "#a89984";
   fgdark = "#504945";
 

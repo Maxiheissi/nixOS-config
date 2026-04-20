@@ -29,8 +29,8 @@
   }; 
   # ─── Netzwerk ─────────────────────────────────────────────────────────────
   networking.hostName = "nixos";
-  networking.networkmanager.enable = true;
-
+  networking.networkmanager.enable = false;
+  networking.wireless.iwd.enable = true;
   # ─── Sprache & Zeitzone ───────────────────────────────────────────────────
   time.timeZone = "Europe/Vienna";
   i18n.defaultLocale = "de_AT.UTF-8";
@@ -81,6 +81,9 @@
     curl
     ripgrep
     fd
+    btop
+    htop
+    gcc
   ];
 
 #--------------------─ Flakes aktivieren ────────────────────────────────────────────────────
