@@ -15,6 +15,16 @@
   #-----zsh-------------------
   programs.zsh.enable = true;
 
+  services.openssh = {
+    enable = true;
+    settings = {
+      PermitRootLogin = "no";
+      PasswordAuthentication = false;
+      };
+  };
+
+
+
  # ─── Fonts ────────────────────────────────────────────────────────────────
   fonts = {
     enableDefaultPackages = true;
