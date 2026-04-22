@@ -13,6 +13,7 @@ in
 
   home.packages = with pkgs; [
     ripgrep
+    lazygit
     fd
     btop
     htop
