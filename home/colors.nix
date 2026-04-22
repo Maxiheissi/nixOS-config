@@ -14,6 +14,4 @@
   red    = "#fb4934";
   purple = "#d3869b";
   blue   = "#83a598";
-
-  term   = "foot";
 }

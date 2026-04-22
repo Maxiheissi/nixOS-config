@@ -1,4 +1,4 @@
-{ config, pkgs, lib,  ... }:
+{pkgs, lib,  ... }:
 
 let
   c = import ./colors.nix;
@@ -11,11 +11,23 @@ in
   home.stateVersion = "23.11";
 
 
-  programs.zsh = {
-    enable = true;
-    enableAutosuggestions = true;
-    enableSyntaxHighlighting = true;
-  };
+  home.packages = with pkgs; [
+    ripgrep
+    fd
+    btop
+    htop
+    wget
+    curl
+    gcc
+    bluetui
+    impala
+    nix-prefetch-git
+  ];
+   programs.zsh = {
+     enable = true;
+     enableAutosuggestions = true;
+     enableSyntaxHighlighting = true;
+   };
 
 
 

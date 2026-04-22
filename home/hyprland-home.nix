@@ -1,4 +1,4 @@
-{config, ... }:
+{... }:
 
 
 
@@ -35,6 +35,9 @@ in
       input = {
 
         kb_layout = "de";
+        touchpad = {
+          natural_scroll = true;
+        };
       };
 
       exec-once = [

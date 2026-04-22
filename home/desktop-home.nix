@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{pkgs, ... }:
 
 let
   c = import ./colors.nix;
@@ -27,6 +27,7 @@ in
   ];
 
 
+
 gtk = {
   enable = true;
   theme = {
@@ -50,7 +51,7 @@ gtk = {
     confirm-close-surface = false
     font-family = Iosevka Nerd Font
     font-size = 13
-  #'';
+  '';
 
 
 programs.foot = {
@@ -239,4 +240,16 @@ programs.waybar = {
     }
   '';
 };
+
+
+home.file.".config/xdg-desktop-portal-termfilechooser/config".text = ''
+  [filechooser]
+  cmd=${pkgs.xdg-desktop-portal-termfilechooser}/share/xdg-desktop-portal-termfilechooser/yazi-wrapper.sh
+  default_dir=$HOME
+  env=TERMCMD=foot
+  env=PATH="$PATH:/run/current-system/sw/bin"
+  open_mode = suggested
+  save_mode = last
+'';
+
 }
