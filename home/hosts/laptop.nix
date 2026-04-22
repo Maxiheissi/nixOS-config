@@ -5,5 +5,4 @@
     ../desktop-home.nix
     ../hyprland-home.nix
   ];
-
 }
