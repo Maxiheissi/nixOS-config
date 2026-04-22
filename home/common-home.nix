@@ -25,9 +25,9 @@ in
   ];
    programs.zsh = {
      enable = true;
-     enableAutosuggestions = true;
-     enableSyntaxHighlighting = true;
-   };
+     autosuggestion.enable = true;        
+     syntaxHighlighting.enable = true;
+  };
 
 
 
@@ -42,8 +42,8 @@ in
   
   programs.git = {
   enable = true;
-  userName = "maxiheissi";
-  userEmail = "mhe@aon.at";  
+  settings.user.name = "maxiheissi";
+  settings.user.email = "mhe@aon.at";  
   };
 
   programs.yazi = {

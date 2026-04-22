@@ -43,6 +43,8 @@ in
       exec-once = [
         "waybar"
         "hyprpaper"
+
+        "systemctl --user start xdg-desktop-portal-termfilechooser"
       ];
 
       

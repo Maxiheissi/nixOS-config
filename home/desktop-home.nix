@@ -30,10 +30,12 @@ in
 
 gtk = {
   enable = true;
+  gtk4.theme = null;  # neue Standardeinstellung
   theme = {
     name = "Gruvbox-Dark";
     package = pkgs.gruvbox-dark-gtk;
   };
+
   font = {
     name = "JetBrains Mono";
     size = 11;
@@ -140,7 +142,7 @@ programs.waybar = {
 
     modules-left   = [ "hyprland/workspaces" ];
     modules-center = [ "clock" ];
-    modules-right  = [ "battery" "bluetooth" "network" "tray" ];
+    modules-right  = [ "battery" "wireplumber" "bluetooth" "network" "tray" ];
 
     "hyprland/workspaces" = {
       format   = "[{id}]";
@@ -158,6 +160,13 @@ programs.waybar = {
       format-critical = "LOW:{capacity}%";
       critical = 20;
     };
+
+
+    "wireplumber" = {
+      format = "VOL:{volume}%";
+      on-click = "foot -e wiremix";
+    };
+        
     bluetooth = {
       format           = "BT: {status}";
       format-connected = "BT: {device_alias}";
@@ -222,6 +231,17 @@ programs.waybar = {
     #battery.critical {
       color: ${c.red};
     }
+
+    
+    #wireplumber {
+      color: ${c.gold};
+      padding: 0 10px;
+      border-left: 1px solid ${c.border};
+    }
+
+    #wireplumber.muted {
+      color: ${c.red};
+    }    
     #bluetooth {
       color: ${c.green};
       padding: 0 10px;
