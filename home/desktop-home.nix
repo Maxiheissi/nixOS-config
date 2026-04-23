@@ -61,7 +61,7 @@ programs.foot = {
     settings = {
       main = {
         pad = "8x6";
-        font = "Iosevka Nerd Font:size=13";
+        font = "Iosevka Nerd Font:size=12";
         font-bold = "Iosevka Nerd Font:size=13:weight=bold";
         font-italic = "Iosevka Nerd Font:size=13:slant=italic";
         font-bold-italic = "Iosevka Nerd Font:size=13:weight=bold:slant=italic";

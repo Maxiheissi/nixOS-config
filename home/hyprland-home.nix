@@ -31,9 +31,15 @@ in
         "XCURSOR_SIZE,24"
         "HYPRCURSOR_THEME,Adwaita"
         "HYPRCURSOR_SIZE,24"
+        "_JAVA_AWT_WM_NONREPARENTING,1"
       ];
-      input = {
 
+      
+      xwayland = {
+        force_zero_scaling = true;
+      };
+
+      input = {
         kb_layout = "de";
         touchpad = {
           natural_scroll = true;
@@ -47,13 +53,14 @@ in
         "systemctl --user start xdg-desktop-portal-termfilechooser"
       ];
 
-      
+      windowrule = [ 
+     ];
+
+            
       "$mod" = "SUPER";
       "$term" = "foot";
       "$filemanager" = "yazi";
       "$launcher" = "fuzzel";
-
-    
 
       bind = [
         "$mod, Return, exec, $term"
