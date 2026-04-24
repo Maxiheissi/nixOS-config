@@ -15,7 +15,6 @@ in
     ripgrep
     lazygit
     fd
-    btop
     htop
     wget
     curl
@@ -172,5 +171,37 @@ in
     settings = {
       theme = "darcula";  
     };
-  };  
+  };
+
+
+
+  programs.btop = {
+    enable = true;
+    settings = {
+      color_theme = "custom";
+    };
+  };
+
+  xdg.configFile."btop/themes/custom.theme".text = ''
+    main_bg = "${c.bg}"
+    main_fg = "${c.fg}"
+    title = "${c.gold}"
+    hi_fg = "${c.orange}"
+    selected_bg = "${c.bg1}"
+    selected_fg = "${c.orange}"
+    inactive_fg = "${c.fgdark}"
+    graph_color1 = "${c.green}"
+    graph_color2 = "${c.gold}"
+    graph_color3 = "${c.orange}"
+    graph_color4 = "${c.red}"
+    meter_bg = "${c.bg1}"
+    proc_misc = "${c.fgdim}"
+    cpu_box = "${c.border}"
+    mem_box = "${c.border}"
+    net_box = "${c.border}"
+    proc_box = "${c.border}"
+    div_line = "${c.border}"
+    temp_start = "${c.green}"
+    temp_end = "${c.red}"
+  '';    
 }

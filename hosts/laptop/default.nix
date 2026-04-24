@@ -19,7 +19,12 @@
     settings = {
       CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
       CPU_SCALING_GOVERNOR_ON_AC = "performance";
-    };
+      DEVICES_TO_DISABLE_ON_BAT_NOT_IN_USE = "bluetooth";
+      CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
+      PLATFORM_PROFILE_ON_BAT = "low-power";
+      PLATFORM_PROFILE_ON_AC = "performance";
+      NMI_WATCHDOG = 0;      
+      };
   };
 
   hardware.nvidia = {

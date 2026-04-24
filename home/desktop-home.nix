@@ -159,6 +159,7 @@ programs.waybar = {
       format-full = "BAT:full";
       format-critical = "LOW:{capacity}%";
       critical = 20;
+      on-click = "foot -e btm --battery"
     };
 
 
