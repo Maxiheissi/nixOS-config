@@ -15,7 +15,7 @@ in
     ripgrep
     lazygit
     fd
-    htop
+    bottom
     wget
     curl
     gcc
