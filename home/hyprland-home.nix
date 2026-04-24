@@ -53,9 +53,6 @@ in
         "systemctl --user start xdg-desktop-portal-termfilechooser"
       ];
 
-      windowrule = [ 
-     ];
-
             
       "$mod" = "SUPER";
       "$term" = "foot";

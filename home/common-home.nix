@@ -50,6 +50,15 @@ in
   programs.yazi = {
     enable = true;
 
+
+
+    keymap = {
+      manager.prepend_keymap = [
+        { on = "g"; run = "shell 'lazygit' --block"; desc = "lazygit"; }
+       ];
+    };
+
+
     settings = {
       opener = {
         edit = [
