@@ -22,6 +22,7 @@ in
     bluetui
     impala
     nix-prefetch-git
+    fastfetch
   ];
    programs.zsh = {
      enable = true;
@@ -203,5 +204,8 @@ in
     div_line = "${c.border}"
     temp_start = "${c.green}"
     temp_end = "${c.red}"
-  '';    
+  '';
+
+
+ 
 }
