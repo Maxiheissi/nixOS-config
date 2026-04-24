@@ -14,6 +14,25 @@
   networking.wireless.iwd.enable = true;
 
 
+  services.tlp = {
+    enable = true;
+    settings = {
+      CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
+      CPU_SCALING_GOVERNOR_ON_AC = "performance";
+    };
+  };
+
+  hardware.nvidia = {
+    modesetting.enable = true;
+    prime = {
+      offload = {
+        enable = true;
+        enableOffloadCmd = true;
+      };
+      intelBusId = "PCI:0:2:0";
+      nvidiaBusId = "PCI:1:0:0";
+    };
+  };
   users.users.maxiheissi = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "video" "audio" "bluetooth" ];
