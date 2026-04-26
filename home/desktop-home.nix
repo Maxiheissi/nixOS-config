@@ -137,7 +137,7 @@ programs.waybar = {
   settings = [{
     layer    = "top";
     position = "top";
-    height   = 35;
+    height   = 25;
     spacing  = 0;
 
     modules-left   = [ "hyprland/workspaces" ];
