@@ -17,7 +17,8 @@
   };
 
   networking.hostName = "nixos-pc";
-  networking.networkmanager.enable = true;
+  # networking.networkmanager.enable = true;
+  networking.wireless.iwd.enable = true;
 
   hardware.opengl.enable = true;
 

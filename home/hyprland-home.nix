@@ -34,6 +34,12 @@ in
         "_JAVA_AWT_WM_NONREPARENTING,1"
       ];
 
+    monitor = [
+      
+      "HDMI-A-1,1920x1080@60,0x0,1"
+      "DP-1,1920x1080@60,1920x0,1"
+    ];
+
       
       xwayland = {
         force_zero_scaling = true;
