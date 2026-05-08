@@ -1,4 +1,4 @@
-{pkgs, ... }:
+{pkgs, inputs, ... }:
 
 let
   c = import ./colors.nix;
@@ -7,6 +7,8 @@ in
 {
   home.packages = with pkgs;[
 
+ 
+      inputs.hyprswitch.packages.${pkgs.system}.default
       ghostty
       kitty
       foot

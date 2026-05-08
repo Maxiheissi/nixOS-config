@@ -34,12 +34,7 @@ in
         "_JAVA_AWT_WM_NONREPARENTING,1"
       ];
 
-    monitor = [
       
-      "HDMI-A-1,1920x1080@60,0x0,1"
-      "DP-1,1920x1080@60,1920x0,1"
-    ];
-
       
       xwayland = {
         force_zero_scaling = true;
@@ -56,6 +51,7 @@ in
         "waybar"
         "hyprpaper"
 
+        "exec-once = hyprshell run &"
         "systemctl --user start xdg-desktop-portal-termfilechooser"
       ];
 
@@ -86,10 +82,9 @@ in
         "$mod, 5, movetoworkspace, 5"
 
         
-        "ALT, Tab, workspace, e+1"
-        
-
-
+       # "ALT, Tab, workspace, e+1"
+         
+        "ALT, Tab, exec, hyprshell switch --mod-key alt_l --key tab"      
         
         "$mod, left,  movefocus, l"
         "$mod, right, movefocus, r"
@@ -100,6 +95,11 @@ in
         "$mod SHIFT, E, exit,"
 
         
+      ];
+
+      
+      bindr = [
+        "ALT, Alt_L, exec, hyprshell close"
       ];
 
       decoration = {
