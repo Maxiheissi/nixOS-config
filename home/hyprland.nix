@@ -84,8 +84,7 @@ in
         
        # "ALT, Tab, workspace, e+1"
          
-        "ALT, Tab, exec, hyprshell switch --mod-key alt_l --key tab"      
-        
+        "ALT, Tab, exec, hyprshell switch --mod-key alt_l --key tab"
         "$mod, left,  movefocus, l"
         "$mod, right, movefocus, r"
         "$mod, up,    movefocus, u"

@@ -1,4 +1,4 @@
-{pkgs, inputs, ... }:
+{pkgs,  ... }:
 
 let
   c = import ./colors.nix;
@@ -8,7 +8,9 @@ in
   home.packages = with pkgs;[
 
  
-      inputs.hyprswitch.packages.${pkgs.system}.default
+
+
+      hyprshell
       ghostty
       kitty
       foot
@@ -134,4 +136,35 @@ programs.foot = {
   # };
   
 
+ 
+  xdg.configFile."hyprshell/styles.css".text = ''
+    :root {
+      --border-color: ${c.border};
+      --border-color-active: ${c.orange};
+      --bg-color: ${c.bg};
+      --bg-color-hover: ${c.bg1};
+      --border-radius: 0px;
+      --border-size: 1px;
+    }
+  '';
+
+
+    # xdg.configFile."hyprshell/config.ron".text = ''
+    #   (
+    #     version: 3,
+    #     windows: (
+    #       scale: 8.5,
+    #       items_per_row: 5,
+    #       overview: None,
+    #       switch: (
+    #         modifier: "alt",
+    #         key: "Tab",
+    #         filter_by: [],
+    #         switch_workspaces: true,
+    #         exclude_special_workspaces: "",
+    #       ),
+    #       switch_2: None,
+    #     ),
+    #   )
+    # '';
 }

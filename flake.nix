@@ -1,18 +1,16 @@
 {
   description = "my NixOS config";
   inputs = {
-    hyprswitch.url = "github:H3rmt/hyprswitch";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = { nixpkgs, home-manager, hyprswitch, ... }@inputs:
+  outputs = { nixpkgs, home-manager, ... }:
   let
     mkSystem = host: nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = { inherit inputs; };
       modules = [
         ./hosts/${host}/default.nix
         {
@@ -25,7 +23,6 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.users.maxiheissi = import ./home/hosts/${host}.nix;
         }
       ];
