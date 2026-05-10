@@ -51,7 +51,7 @@ in
         "waybar"
         "hyprpaper"
 
-        "exec-once = hyprshell run &"
+        "hyprshell run &"
         "systemctl --user start xdg-desktop-portal-termfilechooser"
       ];
 
@@ -82,9 +82,8 @@ in
         "$mod, 5, movetoworkspace, 5"
 
         
-       # "ALT, Tab, workspace, e+1"
          
-        "ALT, Tab, exec, hyprshell switch --mod-key alt_l --key tab"
+        # "ALT, Tab, exec, hyprshell switch --mod-key alt_l --key tab"
         "$mod, left,  movefocus, l"
         "$mod, right, movefocus, r"
         "$mod, up,    movefocus, u"
@@ -97,9 +96,9 @@ in
       ];
 
       
-      bindr = [
-        "ALT, Alt_L, exec, hyprshell close"
-      ];
+      # bindr = [
+      #   "ALT, Alt_L, exec, hyprshell close"
+      # ];
 
       decoration = {
         rounding = 0;

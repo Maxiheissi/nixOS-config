@@ -23,6 +23,8 @@ in
     impala
     nix-prefetch-git
     fastfetch
+    kalker
+    rustup
   ];
    programs.zsh = {
      enable = true;
