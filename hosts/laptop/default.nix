@@ -10,8 +10,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos-lap";
-  networking.networkmanager.enable = false;
-  networking.wireless.iwd.enable = true;
+ # networking.networkmanager.enable = false;
+#  networking.wireless.iwd.enable = true;
 
 
   services.tlp = {

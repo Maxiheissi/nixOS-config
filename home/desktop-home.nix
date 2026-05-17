@@ -27,7 +27,8 @@ in
       thunderbird
       wl-clipboard
       wiremix
-      python3  
+      python3
+      grimblast  
   ];
 
 

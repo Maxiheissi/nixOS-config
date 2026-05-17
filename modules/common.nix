@@ -10,6 +10,13 @@
     };
   };
 
+networking.wireless.iwd = {
+  enable = true;
+  settings = {
+    General.EnableNetworkConfiguration = true;
+  };
+};
+
   fonts = {
     enableDefaultPackages = true;
     packages = with pkgs; [

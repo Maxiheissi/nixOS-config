@@ -81,9 +81,10 @@ in
         "$mod, 4, movetoworkspace, 4"
         "$mod, 5, movetoworkspace, 5"
 
-        
+        "$mod SHIFT, S,  exec, grimblast copy area"
+        ", Print, exec, grimblast copy screen"
          
-        # "ALT, Tab, exec, hyprshell switch --mod-key alt_l --key tab"
+        # "ALT, Tab, exec, hyprshell switch --mod-key alt_l --key tab" #wird von hyprshell übernommen
         "$mod, left,  movefocus, l"
         "$mod, right, movefocus, r"
         "$mod, up,    movefocus, u"
